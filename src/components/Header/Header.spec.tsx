@@ -24,6 +24,8 @@ describe('ActiveLink component', () => {
 		 render(
 			<Header />
 		)
+
+		screen.logTestingPlaygroundURL()
 	
 		expect(screen.getByText('Home')).toBeInTheDocument()
 		expect(screen.getByText('Posts')).toBeInTheDocument()
